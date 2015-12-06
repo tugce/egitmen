@@ -1,0 +1,9 @@
+<h3>Merhaba {{vm.user.firstName}}!</h3>
+<ul class="nav nav-tabs" ng-controller="">
+  <li role="presentation" ng-class="{ active: isActive('#')}"><a href="#">Durum</a></li>
+  <li role="presentation" ng-class="{ active: isActive('#/calisma')}"><a href="#/calisma">Çalışma</a></li>
+  <li role="presentation" ng-class="{ active: isActive('#/odevler')}"><a href="#/odevler">Ödevler</a></li>
+</ul>
+<p>&nbsp;</p>
+
+<p><a href="#/login" class="btn btn-primary">Logout</a></p>

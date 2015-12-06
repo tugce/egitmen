@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Ödevler</div>
+
+  <!-- Table -->
+  <table class="table">
+    <tr class="days">
+       <th scope="col" title="Ödev Adı">Ödev Adı</th>
+       <th scope="col" title="İçerik">İçerik</th>
+       <th scope="col" title="Yapıldı">Yapıldı</th>
+     </tr>
+     <tr ng-repeat="odev in vm.odevler">
+         <td>
+             {{ odev.adi }}
+             <!-- After seven iterations a new `<tr>` should be aded -->
+        </td>
+        <td>
+             {{ odev.icerik }}
+             <!-- After seven iterations a new `<tr>` should be aded -->
+        </td>
+        <td>
+             {{ odev.done }}
+             <!-- After seven iterations a new `<tr>` should be aded -->
+        </td>
+     </tr>
+  </table>
+</div>
